@@ -1,0 +1,103 @@
+.product_detail {
+  width: 100%;
+  height: 100%;
+  background-color: var(--clr-background-grey);
+  .product_details_heading {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    span {
+      display: flex;
+    }
+  }
+  .product_hero {
+    width: 95%;
+    height: 30rem;
+    margin: 2rem auto;
+    background-color: var(--clr-white);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    .image {
+      width: 100%;
+      height: 100%;
+      border: 2px solid red;
+    }
+    .product_details {
+      border: 2px solid blue;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-evenly;
+      .brief,
+      .color_size_qty,
+      .make_purchase {
+        width: 100%;
+        border-bottom: 1px solid blue;
+      }
+      .price_section {
+        display: flex;
+        align-items: baseline;
+        gap: 0.5rem;
+        border-bottom: 1px solid blue;
+        width: 100%;
+      }
+      .make_purchase {
+        padding: 1rem 0;
+        display: flex;
+        justify-content: flex-start;
+        button {
+          width: 60%;
+          background-color: var(--clr-primary);
+          padding: 1rem;
+          border-radius: 6px;
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
+.seller{
+    display: flex;
+}
+  .seller,
+  .overview,
+  .similar_products {
+    width: 95%;
+    padding: 1rem;
+    border: 2px solid red;
+    margin: auto;
+    background-color: var(--clr-white);
+  }
+
+  .overview {
+    // display: flex;
+
+    ul {
+      display: flex;
+      list-style: none;
+      width: fit-content;
+      border: 2px solid pink;
+      li {
+        padding: 1rem;
+        background-color: var(--clr-primary);
+        cursor: pointer;
+        color: var(--clr-white);
+      }
+      li:hover {
+        background-color: var(--clr-secondary);
+      }
+    }
+  }
+  .similar_products {
+    height: fit-content;
+    .items{
+        display: flex;
+        overflow-x: scroll;
+    }
+  }
+}
