@@ -11,26 +11,36 @@ export default function LandingPage() {
     <HeadFoot>
       <div className="landingpage">
         <main className="hero">
-          <div className="carousel">
-            {/* <Carousel /> */}
-          </div>
-{/* left section/ aside  */}
+          <div className="carousel"><Carousel /></div>
+          {/* left section/ aside  */}
           <div className="aside">
             <div className="image">
-              <img src="" alt="aside"/>
+              <img
+                src="/images/kazodo-products/Access.jpg_H1VrdBXyn.jpg"
+                alt="aside"
+              />
             </div>
             <div className="image">
-              <img src="" alt="aside"/>
+              <img
+                src="/images/kazodo-products/IntelBox.jpg_r1pUyyAAs.jpg"
+                alt="aside"
+              />
             </div>
             <div className="image">
-              <img src="" alt="aside"/>
+              <img
+                src="/images/kazodo-products/pow.jpg_SyyYvzXy3.jpg"
+                alt="aside"
+              />
             </div>
             <div className="image">
-              <img src="" alt="aside"/>
+              <img
+                src="/images/kazodo-products/Power.jpg_rkeYDfQkh.jpg"
+                alt="aside"
+              />
             </div>
           </div>
         </main>
-          {/* //today's deal section */}
+        {/* //today's deal section */}
         <section className="todays_deal">
           <header>
             <h3>Today's Deals</h3>
@@ -78,7 +88,7 @@ export default function LandingPage() {
         <section className="sponsored_product">
           <h2>Sponsored Products</h2>
           <hr />
-          <aside>
+          <aside className="sponsored_product_wrapper">
             <div>
               <Card2
                 image="./images/kazodo-products/190496_1626794216.jpg"

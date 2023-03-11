@@ -19,7 +19,10 @@ export default function HeadFoot({ children }) {
       <header className="header">
         <div className="nav_header1">
           <div className="logo">
-            <h3>KAZODO</h3>
+            <Link to="/">
+              {" "}
+              <h3>KAZODO</h3>
+            </Link>
           </div>
           <div className="seller">
             <p>become a seller</p>
@@ -81,10 +84,8 @@ export default function HeadFoot({ children }) {
         </div>
       </header>
       {children}
-      {/* <footer>
-        <div
-          className="about"
-         >
+      <footer>
+        <div className="about">
           <h3>MEDPAU</h3>
           <p>
             At MedPau, we believe smart innovations in healthcare is key to
@@ -116,8 +117,7 @@ export default function HeadFoot({ children }) {
             </Link>
           </ul>
         </div>
-        <div
-          className="courses">
+        <div className="courses">
           <div className="head">
             <h3>Medpau Impact Projects </h3>
             <hr />
@@ -166,15 +166,13 @@ export default function HeadFoot({ children }) {
             </NavLink>
           </ul>
         </div>
-        <div
-          className="recent-posts">
+        <div className="recent-posts">
           <div className="head">
             <h3>Recent Posts</h3>
             <hr />
           </div>
         </div>
-        <div
-          className="contact-us">
+        <div className="contact-us">
           <div className="head">
             <h3>Contact Us</h3>
             <hr />
@@ -204,7 +202,7 @@ export default function HeadFoot({ children }) {
             </li>
           </ul>
         </div>
-      </footer> */}
+      </footer>
     </div>
   );
 }

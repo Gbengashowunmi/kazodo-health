@@ -1,26 +1,52 @@
 import React from 'react'
 import Slider from 'react-slick';
-import "../slickcss/slick.css"
-import "../slickcss/slick-theme.css"
+import "../slick/slick.css"
+import "../slick/slick-theme.css"
 import "./carousel.scss"
 export default function Carousel() {
       const settings = {
         dots: true,
         infinite: true,
-        speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
+        autoplay: true,
+        speed: 500,
+        autoplaySpeed: 2000,
+        fade: true,
       };
   return (
-    <div className="carousel_wrapper">
       <Slider {...settings}>
-        <div className="carousel_content">
-          <h3>1</h3>
+        <div className="carousel_item">
+          <img
+            src="/images/kazodo-products/Clearance.jpg_Hkk2GuGy2.jpg"
+            alt="carousel"
+          />
         </div>
-        <div className="carousel_content">
-          <h3>1</h3>
+        <div className="carousel_item">
+          <img
+            src="/images/kazodo-products/Beauty.jpg_B1Rsz_G1n.jpg"
+            alt="carousel"
+          />
+        </div>
+        <div className="carousel_item">
+          <img
+            src="/images/kazodo-products/Beauty.jpg_B1Rsz_G1n.jpg"
+            alt="carousel"
+          />
+        </div>
+        <div className="carousel_item">
+          <img
+            src="/images/kazodo-products/Beauty.jpg_B1Rsz_G1n.jpg"
+            alt="carousel"
+          />
+        </div>
+        <div className="carousel_item">
+          <img
+            src="/images/kazodo-products/Beauty.jpg_B1Rsz_G1n.jpg"
+            alt="carousel"
+          />
         </div>
       </Slider>
-    </div>
+      
   );
 }

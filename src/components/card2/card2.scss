@@ -1,3 +1,7 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
 .card2_wrapper {
   width:240px;
   height: 350px;
@@ -8,7 +12,7 @@
   // gap: 1rem;
   justify-content: center;
   padding: 0 1rem;
-  box-shadow: 2px 2px 2px var(--clr-border-shadow);
+  box-shadow: 0 1px 4px var(--clr-border-shadow);
   transition: 0.6s;
   position: relative;
   background-color: var(--clr-white);

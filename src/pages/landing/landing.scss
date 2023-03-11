@@ -5,31 +5,33 @@
     .hero{
     width: 100%;
     min-height:430px ;
-    border: 2px solid green;
-    display: grid;
-    grid-template-columns: 2.3fr 1fr;
+    // border: 2px solid green;
+    display: flex;
     gap: 1rem;
     padding: 1rem;
+    margin-bottom: 1rem;
     .carousel{
-        border: 2px solid blue;
                 border-radius: 10px;
-                // width: 100px;
-                // height: 400px;
+                width: 65%;
+                // height: 100%;
 
     }
     .aside{
-        border: 2px solid blue;
         border-radius: 10px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
         height: 100%;
-        padding: 1rem;
         .image{
             height: 100%;
             border-radius: 10px;
             width: 100%;
-            border: 1px solid red;
+            img{
+                width: 100%;
+                height: 100%;
+        border-radius: 10px;
+
+            }
         }
 
     }
@@ -62,7 +64,7 @@
 height: fit-content;
 width: 100%;
 text-align: left;
-background-color: var(--clr-background-grey);
+background-color: var(--clr-white);
 h2{
     padding: 1rem;
 }
@@ -74,6 +76,8 @@ h2{
         overflow-x: auto;
         gap: 1rem;
         padding: 1rem;
+// background-color: var(--clr-background-grey);
+
     }
 }
 .banner1{
@@ -85,7 +89,11 @@ h2{
 }
 
 .main_card{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 1rem 0;
+    gap: 1.5rem;
+    justify-content: center;
+    width: 100%;
 }
 }

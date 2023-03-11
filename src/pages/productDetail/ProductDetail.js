@@ -88,27 +88,53 @@ export default function ProductDetail() {
           <h3>Similar Items you may like</h3>
           <div className="items">
             <div>
-              <Card2 />
+              <Card2
+                image="./images/kazodo-products/190496_1626794216.jpg"
+                description="Airtel 4G Pocket Wifi"
+                price="8,500"
+                oldPrice="20,000"
+              />
             </div>
             <div>
-              <Card2 />
+              <Card2
+                image="./images/kazodo-products/201124_1675467474.jpg"
+                description="Airtel 4G Pocket Wifi"
+                price="8,500"
+                oldPrice="20,000"
+              />
             </div>
             <div>
-              <Card2 />
+              <Card2
+                image="./images/kazodo-products/211454_1672532842.jpg"
+                description="Airtel 4G Pocket Wifi"
+                price="8,500"
+                oldPrice="20,000"
+              />
             </div>
             <div>
-              <Card2 />
+              <Card2
+                image="./images/kazodo-products/203020_1674629573.jpg"
+                description="Airtel 4G Pocket Wifi"
+                price="8,500"
+                oldPrice="20,000"
+              />
             </div>
             <div>
-              <Card2 />
+              <Card2
+                image="./images/kazodo-products/186186_1653915602.jpg"
+                description="Airtel 4G Pocket Wifi"
+                price="8,500"
+                oldPrice="20,000"
+              />
             </div>
             <div>
-              <Card2 />
+              <Card2
+                image="./images/kazodo-products/192711_1651671034.jpg"
+                description="Airtel 4G Pocket Wifi"
+                price="8,500"
+                oldPrice="20,000"
+              />
             </div>
-            <div>
-              <Card2 />
-            </div>
-
           </div>
         </section>
       </div>
