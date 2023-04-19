@@ -1,0 +1,138 @@
+.sign_up_page {
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
+  h2 {
+    font-size: 2.2rem;
+    color: var(--clr-secondary);
+  }
+  form {
+    width: 50vw;
+    height: fit-content;
+    // border: 2px solid red;
+    background-color: var(--clr-white);
+    box-shadow: 1px 1px 3px var(--clr-border-shadow);
+    margin: 3rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 1rem;
+    align-items: center;
+    h3{
+      color: var(--clr-secondary);
+    }
+hr{
+    width: 100%;
+}
+label{
+  text-align: left;
+  width: 90%;
+}
+    .input {
+      margin-top: 1rem;
+      padding: 1rem;
+      width: 90%;
+      margin: auto;
+      outline: none;
+    }
+
+    
+    .error{
+      padding: 1rem;
+      border-left: 2px solid tomato;
+      background-color: rgba(255, 99, 71, 0.658);
+      color: var(--clr-secondary);
+    }
+    .success{
+            padding: 1rem;
+      border-left: 2px solid green;
+      background-color: rgba(0, 128, 0, 0.671);
+      color: var(--clr-secondary);
+    }
+    .terms{
+      color: var(--clr-border-shadow);
+
+    }
+    button {
+      padding: 1rem;
+      background-color: var(--clr-primary);
+      border-radius: 3px;
+      border: none;
+      color: white;
+      transition: 0.6s;
+      font-weight: 800;
+      width: 90% ;
+      
+    }
+    button:hover {
+      cursor: pointer;
+      background-color: var(--clr-secondary);
+    }
+    ::placeholder {
+      color: var(--clr-border-shadow);
+    }
+}
+a{
+  width: 100%;
+}
+.login{
+    background-color: transparent;
+    color: var(--clr-reddish-brown);
+    border: 1px solid var(--clr-reddish-brown);
+    
+}
+.login:hover{
+        background-color: var(--clr-reddish-brown);
+    color: var(--clr-white);
+    border: 1px solid var(--clr-reddish-brown);
+}
+}
+
+
+@media (max-width:900px) {
+  .sign_up_page {
+  padding: 3rem 1rem;
+
+  h2 {
+    font-size: 2rem;
+  }
+  form {
+    width: 80vw;
+    margin: 2rem auto;
+label{
+  text-align: left;
+  width: 90%;
+}
+
+}
+}
+}
+@media (max-width:600px) {
+  .sign_up_page {
+  padding: 3rem 5px;
+
+  h2 {
+    font-size: 2rem;
+  }
+  form {
+    width: 95%;
+    margin: 2rem auto;
+label{
+  text-align: left;
+  width: 98%;
+}
+    .input {
+      margin-top: 1rem;
+      padding: .5rem;
+      width: 98%;
+      margin: auto;
+      outline: none;
+    }
+        button {
+      width: 98% ;
+      
+    }
+}
+}
+}

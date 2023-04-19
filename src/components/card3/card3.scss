@@ -1,0 +1,105 @@
+.card3_wrapper {
+  // width:100%;
+  height: 400px;
+  display: grid;
+  grid-template-rows: 2fr 1fr ;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 2px 5px var(--clr-border-shadow);
+  background-color: var(--clr-white);
+  transition: 0.6s;
+  position: relative;
+  margin: auto;
+  text-align: left;
+  .discount_flag{
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 25%;
+    height: 40px;
+    background-color: var(--clr-primary);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: var(--clr-white);
+        font-size: 80%;
+padding: 0;
+    }
+  }
+  .image {
+    height: 100%;
+    img{
+      width: 100%;
+      height:100%;
+      object-fit: cover;
+    }
+  }
+  .description {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .name {
+      padding-bottom: 10px;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid rgb(201, 202, 204);
+      border-bottom: 1px solid rgb(201, 202, 204);
+    }
+    .saved {
+      color: var(--clr-primary);
+    }
+  }
+  button{
+    padding: 10px;
+    border: 1px solid var(--clr-primary);
+    background-color: transparent;
+    border-radius: 5px;
+    transition: .6s;
+  }
+  button:hover{
+    background-color: var(--clr-primary);
+    color: var(--clr-white);
+    cursor: pointer;
+  }
+}
+
+.card3_wrapper:hover {
+  cursor: pointer;
+  box-shadow: 2px 6px 8px var(--clr-border-shadow);
+}
+
+@media (max-width:900px) {
+  .card3_wrapper {
+  // width:300px;
+  height: 400px;
+  display: grid;
+  gap: 1rem;
+  padding: 1rem;
+  box-shadow: 1px 2px 5px var(--clr-border-shadow);
+  background-color: var(--clr-white);
+  transition: 0.6s;
+  position: relative;
+  // margin: auto;
+  text-align: left;
+}
+}
+@media (max-width:700px) {
+  .card3_wrapper {
+  width:300px;
+  height: 400px;
+  display: grid;
+  box-shadow: 1px 2px 5px var(--clr-border-shadow);
+  background-color: var(--clr-white);
+  transition: 0.6s;
+  position: relative;
+  // margin: auto;
+  text-align: left;
+}
+}

@@ -1,0 +1,168 @@
+.sell_wrapper {
+  width: 100%;
+  background-color: var(--clr-background-grey);
+  button {
+    padding: 0.7rem 1.5rem;
+    background-color: transparent;
+    border: 1px solid var(--clr-secondary);
+    border-radius: 5px;
+    font-weight: 700;
+    color: var(--clr-secondary);
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  .hero_sell {
+    margin: 1rem auto;
+    width: 95%;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1.5rem;
+    background-color: var(--clr-white);
+    padding: 2rem;
+    img {
+      height: 100%;
+    }
+    .hero_desc {
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+      //   h1 {
+      //     font-size: 3.5rem;
+      //   }
+      p {
+        font-size: 1.3rem;
+      }
+    }
+  }
+
+  .why_sell_container {
+    margin: 1rem auto;
+    width: 95%;
+    min-height: 400px;
+    background-color: var(--clr-white);
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    .why_sell_content {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 3rem;
+      .why_sell {
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h5 {
+          font-size: 1.3rem;
+          // color: var(--clr-secondary);
+        }
+        p {
+          font-size: 0.8rem;
+          width: 70%;
+          // color: var(--clr-primary);
+        }
+        img {
+          height: 60%;
+          width: auto;
+        }
+      }
+    }
+  }
+
+  .earn_without_hassle {
+    margin: 1rem auto;
+    width: 95%;
+    // min-height: 400px;
+    background-color: var(--clr-white);
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 2fr 1.5fr;
+    .text {
+      margin: auto 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: flex-start;
+      margin-left: 2rem;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .sell_wrapper {
+    h1 {
+      font-size: 2rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+    }
+    .hero_sell {
+      width: 95%;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 1rem;
+      .hero_desc {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: flex-start;
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .why_sell_container {
+      background-color: var(--clr-white);
+      padding: 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      .why_sell_content {
+        grid-template-columns: 1fr 1fr;
+        .why_sell {
+          height: 300px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          h5 {
+            font-size: 1.1rem;
+          }
+          p {
+            font-size: 0.8rem;
+            width: 90%;
+            // color: var(--clr-primary);
+          }
+          img {
+            height: 60%;
+            width: auto;
+          }
+        }
+      }
+    }
+
+    .earn_without_hassle {
+      grid-template-columns: 1fr;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}

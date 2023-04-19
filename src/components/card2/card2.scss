@@ -1,0 +1,74 @@
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.card2_wrapper {
+  width:240px;
+  height: 350px;
+  // display: grid; 
+  display: flex;
+  flex-direction: column;
+  // grid-template-rows: 2fr 1fr ;
+  // gap: 1rem;
+  justify-content: center;
+  padding: 0 1rem;
+  box-shadow: 0 1px 4px var(--clr-border-shadow);
+  transition: 0.6s;
+  position: relative;
+  background-color: var(--clr-white);
+  h3{
+    font-size: 1.3rem;
+  }
+  .discount_flag{
+    position: absolute;
+    top: 3%;
+    left: 0;
+    width: 25%;
+    height: 40px;
+    background-color: var(--clr-primary);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p{
+        color: var(--clr-white);
+padding: 0;
+    }
+  }
+  .image {
+    height: 50%;
+    width: 100%;
+
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+  }
+  .description {
+    height: 40%;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    .name {
+      // padding-bottom: 10px;
+    }
+    .price {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+    .saved {
+      color: var(--clr-primary);
+      font-size: .8rem;
+    }
+  }
+}
+
+.card2_wrapper:hover {
+  cursor: pointer;
+  box-shadow: 4px 4px 8px var(--clr-border-shadow);
+}

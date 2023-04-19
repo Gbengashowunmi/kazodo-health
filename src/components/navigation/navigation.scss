@@ -1,0 +1,27 @@
+.navigation {
+  width: 100%;
+  height: fit-content;
+  padding: 2rem;
+  background-color: var(--clr-background-grey);
+  .items {
+    width: 65%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    .navigation_aside {
+      width: 100%;
+      ul {
+        list-style: none;
+        text-align: left;
+        li{
+            transition: .6s;
+        }
+        li:hover{
+            cursor: pointer;
+            color: var(--clr-primary);
+            transition: .6s;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.App {
+  text-align: center;
+  width: 100%;
+  /* height: 100vh; */
+  /* overflow-x: hidden; */
+  background-color: var(--clr-background-grey);
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-primary: #0020FF;
+  --clr-secondary: #02127c;
+  --clr-primary-light: #2843f5;
+  --clr-light-blue-btn:#adb7fc;
+  --clr-white: #fff;
+  --clr-background-grey:rgb(240, 244, 247);
+  --clr-border-shadow: rgb(161, 161, 161);
+--clr-reddish-brown:rgb(196, 4, 4);
+}
